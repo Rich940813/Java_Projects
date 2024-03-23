@@ -1,11 +1,25 @@
-package mi_project;
+package mi_projec
 
 public class Attempt_Shapes {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		triangle(1);
 
+		public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		//get the user input
+		String sizeS =" ";
+		while(!sizeS.equals("exit")) {
+			System.out.println("Please insert a number to show the size shape or type \"exit\" to out ");
+			sizeS = scan.next();
+			if (sizeS.equals("exit")) {
+				System.out.println("You are out of the program");
+			}
+			else {
+				triangle(Integer.parseInt(sizeS));
+			}
+			
+		}
+		
 	}
 	
 	public static void triangle(int size) {
@@ -105,3 +119,4 @@ public class Attempt_Shapes {
 	}
 
 }
+
